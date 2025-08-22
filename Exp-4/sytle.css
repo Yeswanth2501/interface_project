@@ -1,0 +1,27 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.slide {
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+
+.slide.active {
+  display: block;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

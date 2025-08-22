@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Init Example</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .one{
+            grid-column: 1/5;
+            grid-row: 1/2;
+            background-color: #ffadad;
+        }
+        .two{
+            grid-column: 5/7;
+            grid-row: 1/2;
+            background-color: #ffd6a5;
+        }
+        .three{
+            grid-column: 1/3;
+            grid-row: 2/4;
+            background-color: #fdffb6;
+        }
+        .four{
+            grid-column: 3/5;
+            grid-row: 2/4;
+            background-color: #caffbf;
+        }
+        .five{
+            grid-column: 5/7;
+            grid-row: 2/4;
+            background-color: #9bf6ff;
+        }
+        .six{
+            grid-column: 1/7;
+            grid-row: 4/5;
+            background-color: #a0c4ff;
+        }
+        .seven{
+            grid-column: 1/7;
+            grid-row: 5/6;
+            background-color: #b9fbc0;
+        }
+        .grid-item:nth-child(1) { background-color: #ffadad; }
+        .grid-item:nth-child(2) { background-color: #ffd6a5; }
+        .grid-item:nth-child(3) { background-color: #fdffb6; }
+        .grid-item:nth-child(4) { background-color: #caffbf; }
+        .grid-item:nth-child(5) { background-color: #9bf6ff; }
+        .grid-item:nth-child(6) { background-color: #a0c4ff; }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class=" iteam one">1</div>
+        <div class="iteam two">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+</html>

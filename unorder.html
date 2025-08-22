@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Menu</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container for the menu */
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+      display: flex;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu > li > a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .menu > li:hover {
+      background-color: #444;
+    }
+
+    /* Dropdown submenu */
+    .menu li ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #8a6565;
+      display: none;
+      min-width: 150px;
+    }
+
+    .menu li:hover ul {
+      display: block;
+    }
+
+    .menu li ul li a {
+      display: block;
+      padding: 10px 15px;
+      color: rgb(250, 249, 249);
+      text-decoration: none;
+    }
+
+    .menu li ul li a:hover {
+      background-color: #8f8f67;
+    }
+  </style>
+</head>
+<body>
+
+  <ul class="menu">
+    <li><a href="#">Kl University</a>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Admission</a></li>
+      <li><a href="#">Academics</a></li>
+    </li>
+    </ul>
+    <li>
+      <a href="#">Courses</a>
+      <ul>
+        <li><a href="#">AIML</a></li>
+        <li><a href="#">FEDE</a></li>
+        <li><a href="#">OOPS</a></li>
+      </ul>
+    </li>
+    <li> <a href="#">Courses-Cse1</a>
+      <ul>
+        <li><a href="#">AIML-A</a></li>
+        <li><a href="#">FEDE-R</a></li>
+        <li><a href="#">OOPS-A</a></li>
+      </ul></li>
+    <li><a href="#">Contact</a>
+    <ul>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Phone</a></li>
+        <li><a href="#">Address</a></li>
+    </ul></li>
+    
+
+</body>
+</html>
